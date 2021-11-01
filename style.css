@@ -1,0 +1,111 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family:'Titillium Web', sans-serif;
+    font-weight: 300;
+    font-size: 1.15em;
+  }
+body{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: #efefef;
+   
+}
+ .container{
+   display: flex;
+   height: 50vh;
+    align-items:center;
+    justify-content: center; 
+   background-color: hsl(0, 0%, 0%);
+    /* background-color:white; */
+    min-width: min-content;
+    max-width: max-content;
+    margin-top: 10%
+    
+
+     
+ }
+.calculator{
+    width: 325px;
+    border: 1px solid black;
+    margin-top: 70%;
+    
+}
+/* .calculator-input input { */
+.calculator-input input {
+    border: none;
+    outline: none;
+    padding:0px 10px;
+    width: 100%;
+    border-bottom: 2px solid black;
+    text-align:right;
+    background-color: black;
+    color: white;
+    font-size: 3rem;
+}
+ 
+.all-button{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(6,1fr);
+  grid-gap: 10px;
+  justify-content: center;
+  padding-left: 10px;
+  padding-top: 50px;
+  background-color:black; 
+   margin-top: 1fr
+  
+
+}
+.button{
+  display: flex;
+  /* border: 1px solid; */
+  align-items: center; 
+  justify-content: center; 
+  outline: none;
+  padding-bottom: 5px;
+  /* cursor: pointer;   */
+  /* font-size: 2rem;
+  border-radius:50%; */
+}
+button{
+width: 60px;
+aspect-ratio: 1;
+border-radius: 50%;
+cursor: pointer;
+}
+.btn-round{
+    width: 65px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+  }
+ 
+  .span-2{
+    grid-column: span 2 ;
+    height: 65px;
+    width: 155px;
+    border-radius: 60px;
+    color:white ;
+    cursor: pointer;
+  }
+
+.orange{
+  background-color: #ff9834;
+}
+.light-gray{
+  background-color: rgba(128, 128, 128, 0.966);
+  color: black;
+}
+.dark-gray{
+  background-color: #80808098;
+}
+
+
+
